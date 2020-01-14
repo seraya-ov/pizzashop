@@ -1,0 +1,16 @@
+{% extends 'base_signup.html' %}
+{% load bootstrap4 %}
+
+{% block title %}SIGNIN UP PAGE{% endblock %}
+
+{% block heading %}SIGN UP{% endblock %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {% bootstrap_form user_form %}
+
+  <button type="submit" class="btn btn-red float-right">SIGN UP</button>
+</form>  
+<a href="{% url 'shop-sign-in' %}">SIGN IN</a>
+{% endblock %}
