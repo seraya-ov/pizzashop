@@ -1,15 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 body {
   padding-top: 50px;
-  background-color: #EDF2F5;
+  background-color: #f6f6f6;
   overflow: auto;
+  font-family: 'Comfortaa', cursive;;
 }
-
+body {background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+a:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);
+}
 .bg-ruby {
-  background-color: #7B2324;
+  background-color: #411f26;
 }
 
 .bg-red {
-  background-color: #E21E25;
+  background-color: #f6f6f6;
 }
 
 .text-white {
@@ -17,14 +45,34 @@ body {
 }
 
 .btn-red {
-  color: white;
-  background-color: #E21E35;
+  color: #333c54;
+  background-color:  #FFDEAD;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.exit{
+  color: #333c54;
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
 }
 
+.add{
+  color: #333c54;
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
 .btn-red:hover,
 .btn-red:focus {
-  color: white;
-  background-color: #EC4D57;
+  color: #f6f6f6;
+  background-color: #333c54;
 }
 
 /* SIDE BAR */
@@ -34,7 +82,7 @@ body {
   top: 0;
   left: 0;
   padding: 0;
-  background-color: #7B2324;
+  background-color: #333c54;
   overflow: auto;
   z-index: 1000000;
 }
@@ -44,21 +92,21 @@ body {
   padding: 30px 10px;
   font-weight: bold;
   font-size: 15px;
-  background-color: #3F1E1E;
+  background-color: #411f26;
 }
 
 .sidebar > div:first-child > h4 {
-  color: #E0DEEB;
+  color: #333c54;
 }
 
 .sidebar > div:first-child > h5 {
-  color: #FFFFFF;
+  color: black;
 }
 
 /* SIDE BAR - MENU */
 .sidebar .list-group {
   padding: 0;
-  background-color: #7B2324;
+  background-color: #d27230;
 }
 
 .sidebar .list-group > span {
@@ -68,21 +116,29 @@ body {
   padding: 20px 30px;
   font-size: 16px;
   font-weight: 300;
+  padding-left: 40px;
+  font-size: 20px;
+  color: white;
+  text-shadow: #333c54 0 0 5px;
 }
 
 .sidebar .list-group .list-group-item,
 .sidebar .list-group .list-group-item:focus {
-  background-color: #7B2324;
-  color: white;
+  background-color: #f6f6f6;
+  color: #333c54;
   border: 0;
-  padding-left: 60px;
+  padding-left: 30px;
   padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 45px;
+  font-size: 12px;
 }
 
 .sidebar .list-group .list-group-item.active,
 .sidebar .list-group .list-group-item:hover {
-  background-color: #3F1E1E;
+  background-color: #333c54;
   color: #E0DEEB;
+  font-size: 15px;
 }
 
 .sidebar .list-group .list-group-item:first-child {
@@ -92,8 +148,8 @@ body {
 
 .sidebar .list-group .list-group-item .badge,
 .sidebar .list-group .list-group-item.active .badge {
-  background-color: #E31E25;
-  color: #E0DEEB;
+  background-color: #f6f6f6;
+  color: black;
 }
 
 /* SIDE BAR - LOGOUT */
@@ -121,5 +177,5 @@ body {
 
 .table,
 .table > thead > tr > th {
-  border-color: #E31E25;
+  border-color: black;
 }

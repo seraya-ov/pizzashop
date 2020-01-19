@@ -36,9 +36,11 @@ urlpatterns = [
     path('shopapp/shop/', views.shop_shop, name='shop-shop'),
     path('shopapp/shop/add', views.shop_add_product, name='shop-add-product'),
     path('shopapp/shop/edit/<int:product_id>', views.shop_edit_product, name='shop-edit-product'),
+    path('shopapp/shop/pick/<int:product_id>', views.shop_pick_product, name='shop-pick-product'),
+    path('shopapp/shop/choose/<int:product_id>', views.shop_choose_product, name='shop-choose-product'),
     path('shopapp/shop/delete/<int:product_id>', views.shop_delete_product, name='shop-delete-product'),
+    path('shopapp/shop/return/<int:product_id>', views.shop_return_product, name='shop-return-product'),
+    path('shopapp/shop/chosen', views.shop_chosen_items, name='shop-chosen-items'),
+
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-#    path('pizzashop/', views.pizzashop_home, name='pizzashop-home'),
-
- #   path('pizzashop/sign-up', views.pizzashop_sign_up, name='pizzashop-sign-up'),

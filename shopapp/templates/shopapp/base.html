@@ -5,13 +5,15 @@
 {% block sidebar %}
 
 {% url 'shop-shop' as shop_shop_url %}
+{% url 'shop-chosen-items' as shop_chosen_url %}
 {% url 'shop-account' as shop_account_url %}
 
 
 	<div class="text-center">
 	    <br>
 	    <br>
-	    <h4>NAME</h4>
+	    <!-- <h4>PIZZA</h4> -->
+			<img  src="{{ MEDIA_URL }}product_images/logo.png" width="200">
   	</div>
 
 
@@ -21,11 +23,12 @@
 	    <a href="{% url 'shop-shop' %}" class="list-group-item {% if request.path == shop_shop_url %} active {% endif %}">SHOP</a>
 
 	    <span class="text-uppercase">PROFILE</span>
-	    <a href="{% url 'shop-account' %}" class="list-group-item {% if request.path == shop_account_url %} active {% endif %}">PROFILE</a>
+	    <a href="{% url 'shop-account' %}" class="list-group-item {% if request.path == shop_account_url %} active {% endif %}">SETTINGS</a>
+	    <a href="{% url 'shop-chosen-items' %}" class="list-group-item {% if request.path == shop_chosen_url %} active {% endif %}">SELECTED</a>
 	  </div>
 
 	  <div class="text-center">
-	    <a href="{% url 'shop-sign-out' %}?next={{ request.path }}" class="btn btn-red">QUIT</a>
+	    <a href="{% url 'shop-sign-out' %}?next=/shopapp/shop" class="btn btn-red exit">QUIT</a>
 	</div>
 
 {% endblock %}

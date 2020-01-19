@@ -10,12 +10,7 @@
       </h4>
     </div>
     <div class="card-body">
-      <div class="text-right">
-        <a href="{% url 'shop-add-product' %}" class="btn btn-red">ADD</a>
-        <br>
-        <br>
-      </div>
-      <div class="card-columns">
+        <div class="card-columns">
           {% for product in products %}
               <div class="card">
                 <img class="rounded card-img-top"
@@ -24,9 +19,7 @@
                   <h5 class="card-title"><a href="{% url 'shop-pick-product' product.id %}">{{ product.name }}</a></h5>
                   <h6 class="card-subtitle mb-2 text-muted">{{ product.price }}</h6>
                   <p class="card-text">{{ product.short_description }}</p>
-                  <a href="{% url 'shop-delete-product' product.id %}">DELETE</a>
                   <a href="{% url 'shop-choose-product' product.id %}">CHOOSE</a>
-                  <a href="{% url 'shop-edit-product' product.id %}">EDIT</a>
                 </div>
               </div>
           {% endfor %}
