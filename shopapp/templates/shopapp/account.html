@@ -4,7 +4,7 @@
 {% block page %}
   <div class="offset-lg-5 col-lg-8">
     <div class="card">
-      <div class="card-header bg-ruby">
+      <div class="card-header bg-dark">
         <h4 class="card-title text-center text-white">
           PROFILE
         </h4>
@@ -14,7 +14,7 @@
           {% csrf_token %}
           {% bootstrap_form user_form %}
 
-          <button type="submit" class="btn btn-red">UPDATE</button>
+          <button type="submit" class="btn btn-colored">UPDATE</button>
         </form>
       </div>
     </div>
