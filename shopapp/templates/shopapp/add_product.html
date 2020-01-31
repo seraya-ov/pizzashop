@@ -4,7 +4,7 @@
 {% block page %}
 <div class="offset-lg-5 col-lg-8">
     <div class="card">
-      <div class="card-header bg-ruby">
+      <div class="card-header bg-dark">
         <h4 class="card-title text-center text-white">
           Add product
         </h4>
@@ -13,7 +13,7 @@
         <form method="POST" enctype="multipart/form-data">
           {% csrf_token %}
           {% bootstrap_form form %}
-          <button type="submit" class="btn btn-red add">Add</button>
+          <button type="submit" class="btn btn-colored add">Add</button>
         </form>
       </div>
     </div>
