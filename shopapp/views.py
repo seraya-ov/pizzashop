@@ -6,7 +6,6 @@ from shopapp.models import Product
 
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
-# Create your views here.
 
 def home(request):
 	return redirect(shop_home)
