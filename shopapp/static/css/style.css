@@ -32,11 +32,11 @@ a:hover {
   color: white;
   transform: translateY(-7px);
 }
-.bg-ruby {
+.bg-dark {
   background-color: #411f26;
 }
 
-.bg-red {
+.bg-light {
   background-color: #f6f6f6;
 }
 
@@ -44,7 +44,7 @@ a:hover {
   color: white;
 }
 
-.btn-red {
+.btn-colored {
   color: #333c54;
   background-color:  #FFDEAD;
   padding-bottom: 20px;
@@ -69,8 +69,8 @@ a:hover {
   padding-right: 20px;
   margin: auto;
 }
-.btn-red:hover,
-.btn-red:focus {
+.btn-colored:hover,
+.btn-colored:focus {
   color: #f6f6f6;
   background-color: #333c54;
 }
