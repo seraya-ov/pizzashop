@@ -15,12 +15,6 @@ class UserFormForEdit(forms.ModelForm):
         model = User
         fields = ('first_name', 'last_name', 'email')
 
-#class ShopForm(forms.ModelForm):
- #   class Meta:
-  #      model = usr
-   #     fields = ('name', 'phone', 'address')
-
-
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
