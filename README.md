@@ -1,5 +1,7 @@
 # Pizza
-A simple site of a pizzeria
+A simple site of a pizzeria. 
+Authorized users can edit their profile info and choose pizzas. 
+Superusers can also add pizzas and edit them.
 
 #### Getting the code
 ```
@@ -8,7 +10,7 @@ A simple site of a pizzeria
 
 #### Running
 
-Installing python requirements and running it.
+Installing python requirements and running the app.
 
 ```
 > cd pizza
@@ -18,5 +20,4 @@ Installing python requirements and running it.
 > python manage.py runserver
 
 ```
-
 Now you can access the project running on `localhost:8000/`.
