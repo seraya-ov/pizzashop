@@ -20,15 +20,15 @@
 
   	<div class="list-group">
 	    <span class="text-uppercase">SHOP</span>
-	    <a href="{% url 'shop-shop' %}" class="list-group-item {% if request.path == shop_shop_url %} active {% endif %}">SHOP</a>
+	    <a href="{% url 'shop-shop' %}" class="menu-ref list-group-item {% if request.path == shop_shop_url %} active {% endif %}">SHOP</a>
 
 	    <span class="text-uppercase">PROFILE</span>
-	    <a href="{% url 'shop-account' %}" class="list-group-item {% if request.path == shop_account_url %} active {% endif %}">SETTINGS</a>
-	    <a href="{% url 'shop-chosen-items' %}" class="list-group-item {% if request.path == shop_chosen_url %} active {% endif %}">SELECTED</a>
+	    <a href="{% url 'shop-account' %}" class="menu-ref list-group-item {% if request.path == shop_account_url %} active {% endif %}">SETTINGS</a>
+	    <a href="{% url 'shop-chosen-items' %}" class="menu-ref list-group-item {% if request.path == shop_chosen_url %} active {% endif %}">SELECTED</a>
 	  </div>
 
 	  <div class="text-center">
-	    <a href="{% url 'shop-sign-out' %}?next=/shopapp/shop" class="btn btn-colored exit">QUIT</a>
+	    <a href="{% url 'shop-sign-out' %}?next=/shopapp/shop" class="menu-ref btn btn-colored exit">QUIT</a>
 	</div>
 
 {% endblock %}
