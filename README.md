@@ -5,7 +5,7 @@ Superusers can also add pizzas and edit them.
 
 #### Getting the code
 ```
-> git clone https://github.com/SerayaOV/pizza
+> git clone https://github.com/seraya-ov/pizza
 ```
 
 #### Running
