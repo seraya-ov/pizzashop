@@ -1,4 +1,4 @@
-# Pizza
+# PizzaShop
 A simple pizzeria site. 
 Authorized users can edit their profile info and choose pizzas. 
 Superusers can also add pizzas and edit them.
